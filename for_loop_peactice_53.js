@@ -1,0 +1,19 @@
+/*
+Proudcts Practice
+*/
+
+let products = ["Keyboard", "Mouse", "Pen", "Pad", "Monitor", "iPhone"];
+let colors = ["Red", "Green", "Blue"];
+let showCount = 5;
+
+document.write(`<h1> Show ${showCount} Products</h1>`);
+for (let i = 0; i < showCount; i++) {
+  document.write(`<div>`);
+  document.write(`<h2>${i + 1} ${products[i]}</h2>`);
+  document.write(`<p>${colors.join(" | ")}</p>`);
+  document.write(`</div>`);
+
+  for (let j = 0; j < colors.length; j++) {
+    document.write(`<p># ${colors[j]}</p>`);
+  }
+}
